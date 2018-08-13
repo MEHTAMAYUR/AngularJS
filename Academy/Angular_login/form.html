@@ -1,0 +1,226 @@
+
+
+<div class="log">
+    <div class="container">
+       <div class="row">
+          <div class="col-xs-12">
+   
+
+ 
+              <h1>Registration form</h1>
+                   <form name="calc" method="post" ng-submit="valid()" >
+
+                     <table>
+                     <tr>
+                     <td class="pad login-font"> <label for="use">User id:</label></td>  
+                     <td class="pad login-font">
+                     <input class="form-control" type="text" name="use" ng-model="use" ng-minlength=5 ng-maxlength=12 required>
+                       </td>
+                      </tr>
+
+                    <tr>
+                     <td>
+                     </td>
+                      <td>
+                     <user-error ng-class="{'disabled':!(calc.use.$invalid && calc.use.$touched),'enable':(calc.user.$invalid && calc.user.$touched)}" class="login-font-warn"></user-error>
+                      
+                     </td>  
+                     </tr>
+
+                    <tr>
+                        <td class="pad login-font">   <label for="password">Password:</label></td>  
+                         <td class="pad login-font">
+                         <input class="form-control" type="password" ng-model="password" name="password"  ng-minlength=7 ng-maxlength=12 required>
+                         </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                         <label ng-class="{'disabled':!(calc.password.$invalid && calc.password.$touched),'enable':(calc.password.$invalid && calc.password.$touched)}" class="login-font-warn">Required and must be length between 7 to 12</label>
+                         </td>  
+                     </tr>
+                      <tr>
+                        <td class="pad login-font">   <label for="Re-password">Password:</label></td>  
+                         <td class="pad login-font">
+                         <input class="form-control" type="password" ng-model="password1" name="password1"  password-check='password'  required>
+                          </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                         <label ng-class="{'disabled':!(calc.password1.$invalid && calc.password1.$touched),'enable':(calc.password1.$invalid && calc.password1.$touched)}"  class="login-font-warn">Required and must match with above passwword</label>
+                         </td>  
+                     </tr>
+                      <tr>
+                       <td class="pad login-font"> <label for="name">FirstName:</label></td>  
+                       <td class="pad login-font">
+                       <input class="form-control" type="text" ng-model="name" name="name" ng-pattern="namepattern"  required>
+                        </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                       <label ng-class="{'disabled':!(calc.name.$invalid && calc.name.$touched),'enable':(calc.name.$invalid && calc.name.$touched)}" class="login-font-warn">Required and Alphabates only</label>
+                       </td>  
+                       
+                     </tr>
+                      <tr>
+                       <td class="pad login-font"> <label for="lname">LastName:</label></td>  
+                       <td class="pad login-font">
+                       <input class="form-control" type="text" ng-model="lname" name="lname" ng-pattern="namepattern"  required>
+                        </td>
+                       </tr>
+
+                      <tr>
+                         <td>
+                        </td>
+                      <td>
+                       <label ng-class="{'disabled':!(calc.lname.$invalid && calc.lname.$touched),'enable':(calc.lname.$invalid && calc.lname.$touched)}" class="login-font-warn">Required and Alphabates only</label>
+                       </td>  
+                       
+                     </tr>
+
+                     <tr>
+                       <td class="pad login-font"  rowspan="2"> <label for="address">Permant Address:</label></td> 
+                       <td class="pad login-font"> 
+                          <input   type='checkbox' name='permanant' ng-model='permanant' ng-required='!temporary'> Permanant
+                         </td>
+                         </tr>
+                         <tr>
+                         <td class="pad login-font"> 
+                           <input  type='checkbox' name='temporary' ng-model='temporary' ng-required='!permanant'> Temprary
+                         </td>
+                      </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                       <label
+                       ng-class="{'disabled':((calc.permanant.$valid || calc.temporary.$valid) || !(calc.permanant.$touched || calc.temporary.$touched)),'enable':(((!calc.permanant.$valid) && (!calc.temporary.$valid)) && (calc.permanant.$touched || calc.temporary.$touched))}" class="login-font-warn">Please select Address Type</label>
+                     </td>
+                     <tr>
+                       <td class="pad login-font"> <label for="address">Address:</label></td>  
+                       <td class="pad login-font"><input type="text" class="form-control" ng-model="address"></td> 
+
+                     </tr>
+                 
+                     <tr>
+                       <td class="pad login-font"> <label for="city">City:</label></td>  
+                       <td class="pad login-font"><input class="form-control" type="text" name="city" ng-model="city" ng-pattern="namepattern" required>
+                        </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                       <label ng-class="{'disabled':!(calc.city.$invalid && calc.city.$touched),'enable':(calc.city.$invalid && calc.city.$touched)}" class="login-font-warn">Required and Alphabates only</label></td> 
+
+                     </tr>
+                     <tr>
+                       <td  class="pad login-font"> <label for="zipcode">Zipcode:</label></td>  
+                       <td  class="pad login-font"><input class="form-control" type="text" name="zipcode" ng-model="zipcode" ng-pattern="zippattern" required>
+                        </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                       <label  ng-class="{'disabled':!(calc.zipcode.$invalid && calc.zipcode.$touched),'enable':(calc.zipcode.$invalid && calc.zipcode.$touched)}" class="login-font-warn">Required and must be numeric</label> </td> 
+                       
+                     </tr>
+                       <tr>
+                       <td  class="pad login-font"> <label for="country">Country:</label></td>  
+                       <td  class="pad" > 
+                       <select class="form-control" name="country" ng-model="country" required><option value="">(Please Select Country)</option><option value="India">India</option><option value="USA">USA</option><option value="Australia">Austrailia</option></select>
+                        </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                       <label ng-class="{'disabled':!(calc.country.$invalid && calc.country.$touched),'enable':(calc.country.$invalid && calc.country.$touched)}" class="login-font-warn">Required must select country</label></td> 
+                     </tr>
+                     
+                     <tr>
+                       <td  class="pad login-font"> <label for="email">Email:</label></td>  
+                       <td  class="pad login-font">
+                       <input class="form-control" type="email" name="emails" ng-model="emails"required>
+                        </td>
+                           </tr>
+
+                      <tr>
+                     <td>
+                     </td>
+                      <td>
+                       <label ng-class="{'disabled':(!(calc.emails.$error.email || calc.emails.$invalid) || !calc.emails.$touched),'enable':((calc.emails.$error.email ||calc.emails.$invalid) && calc.emails.$touched)}" class="login-font-warn">please enter valid mail</label>
+                        </td>
+                        
+                     </tr>
+                     
+                    <tr>
+                    <td class='pad login-font' rowspan='2'>
+                    <label for='Sex'>Sex:</label>
+                    </td>
+                    <td class='pad login-font'>
+                    <input type='radio' ng-model='gender' name='male' value='male' ng-required='!gender'>Male
+                    </td>
+                    </tr>
+                    <tr>
+                    <td class='pad login-font'><input type='radio' ng-model='gender'  ng-required='!gender' value='female' name='female'>Female
+                    </td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                         <td>
+                            <gender-radio></gender-radio>
+                         </td>
+                     </tr>
+                     <tr>
+                      <td  class="pad login-font" rowspan="2"> <label for="language">Language:</label></td>
+                       <td  class="pad login-font">
+                       <input type='checkbox' name='english' ng-model='english' ng-required='!nonenglish'> English
+                       </td>
+                       </tr>
+                       <tr>
+                          <td class="pad login-font">
+                            <input type='checkbox' name='nonenglish' ng-model='nonenglish' ng-required='!english'>Non English                       
+                         </td>                      
+                      </tr>
+                      <tr> <td></td>
+                         <td>
+                        <language-check></language-check>
+                       </td>                        
+                      </tr> 
+
+                     <tr>
+                       <td  class="pad login-font"> <label for="about">About</label></td>
+                       <td  class="pad login-font"><textarea class="form-control"  id="about" ng-model="about"></textarea></td>
+                     </tr> 
+                     <tr><td><input  class="btn btn-default" type="submit" id="submit" ng-disabled="calc.use.$invalid|| calc.password.$invalid || calc.name.$invalid || calc.zipcode.$invalid || calc.emails.$error.email || calc.emails.$invalid ||(!(calc.male.$valid || calc.female.$valid)) || !(calc.english.$valid || calc.english.$valid)||calc.country.$invalid"></td></tr>    
+
+                     </table>        
+                   
+               
+                     </form>
+      
+      
+     </div>
+     </div>
+ 
+     
+ </div>
+     
+     </div>
+
+
+ 

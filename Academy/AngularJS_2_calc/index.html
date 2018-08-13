@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" href="css/index.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+
+       <div ng-app="App" ng-controller="calculatebuisness">
+         
+      
+       <form name="calc" method="post" >
+       
+           <input type="text" name="result" ng-model="result">
+       
+
+       <div class="margin-top-bottom">
+
+        <input type="submit"  value="1" ng-click="number(1)" class="num">          
+        <input type="submit"  value="2" ng-click="number(2)" class="num">  
+        <input type="submit"  value="3" ng-click="number(3)" class="num">  
+        <input type="submit"  value="+" ng-click="add()" class="num">   
+        </div>
+
+       <div class="margin-top-bottom">
+
+        <input type="submit"  value="4" ng-click="number(4)" class="num">  
+        <input type="submit"  value="5" ng-click="number(5)" class="num">
+        <input type="submit"  value="6" ng-click="number(6)" class="num">
+         <input type="submit"  value="-" ng-click="minus()" class="num">   
+       </div>
+
+
+      <div class="margin-top-bottom"> 
+
+        <input type="submit"  value="7" ng-click="number(7)" class="num">
+        <input type="submit"  value="8" ng-click="number(8)" class="num">
+        <input type="submit"  value="9" ng-click="number(9)" class="num">
+        <input type="submit"  value="*" ng-click="mul()" class="num">  
+      </div>
+
+                 
+          
+          <input type="submit"  value="/" ng-click="div()" class="num">  
+        
+        <input type="submit"  value="=" ng-click="show()" class="num">     
+       
+        <input type="submit"  value="reset" ng-click="reseter()" class="num">     
+       
+        
+       
+         
+       
+       
+       
+      
+
+
+      
+
+     
+          
+     
+ 
+       </form>
+      
+
+
+ </div>
+
+        <script src="js/vendor/jquery-1.12.1.min.js"></script>
+     
+        <script src="js/plugins.js"></script>
+
+         <script src="js/vendor/angular.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/calculate.js"></script>
+
+        
+    </body>
+</html>

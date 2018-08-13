@@ -1,0 +1,84 @@
+ <div>
+    
+ 
+  <h1>Registration form</h1>
+
+       <form name="calc" method="post" ng-submit="valid()" >
+
+       <table>
+       <tr>
+       <td class="margin-top-bottom"> <label for="use">User id:</label></td>  
+       <td class="margin-top-bottom-right">
+       <input type="text" name="use" ng-model="use" ng-minlength=5 ng-maxlength=12 required>
+       <user-error ng-show="calc.use.$invalid && calc.use.$touched"></user-error>
+       
+       </td>  
+       </tr>
+
+
+        <tr>
+          <td class="margin-top-bottom">   <label for="password">Password:</label></td>  
+           <td class="margin-top-bottom-right">
+           <input type="password" ng-model="password" name="password"  ng-minlength=7 ng-maxlength=12 required>
+           <label ng-show="calc.password.$invalid && calc.password.$touched">Required and must be length between 7 to 12</label>
+           </td>  
+       </tr>
+        <tr>
+         <td class="margin-top-bottom"> <label for="name">Name:</label></td>  
+         <td class="margin-top-bottom-right">
+         <input type="text" ng-model="name" name="name" ng-pattern="namepattern"  required>
+         <label ng-show="calc.name.$invalid && calc.name.$touched">Required and Alphabates only</label>
+         </td>  
+         
+       </tr>
+       <tr>
+         <td class="margin-top-bottom"> <label for="address">Address:</label></td>  
+         <td class="margin-top-bottom-right"><input type="text" ng-model="address"></td> 
+
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"> <label for="country">Country:</label></td>  
+         <td  class="margin-top-bottom-right" > 
+         <select name="country" ng-model="country" required><option value="">(Please Select Country)</option><option value="true">India</option><option value="true">USA</option><option value="true">Austrailia</option></select>
+         <label ng-show=" calc.country.$invalid && calc.country.$touched">Required must select country</label></td> 
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"> <label for="zipcode">Zipcode:</label></td>  
+         <td  class="margin-top-bottom-right"><input type="text" name="zipcode" ng-model="zipcode" ng-pattern="zippattern" required>
+         <label ng-show="calc.zipcode.$invalid && calc.zipcode.$touched">Required and must be numeric</label> </td> 
+         
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"> <label for="email">Email:</label></td>  
+         <td  class="margin-top-bottom-right">
+         <input type="email" name="emails" ng-model="emails"required>
+         <label ng-show="(calc.emails.$error.email || calc.emails.$invalid) && calc.emails.$touched">please enter valid mail</label>
+          </td>
+          
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"><label for="Sex">Sex:</label></td>  
+         <td  class="margin-top-bottom-right">
+         <gender-radio></gender-radio>
+         </td> 
+         
+       </tr> 
+       
+       <tr>
+         <td  class="margin-top-bottom"> <label for="language">Language:</label></td>
+         <td  class="margin-top-bottom-right">
+         <language-check></language-check>
+         </td>
+        
+       </tr> 
+       <tr>
+         <td  class="margin-top-bottom"> <label for="about">About</label></td>
+         <td  class="margin-top-bottom-right"><textarea id="about" ng-model="about"></textarea></td>
+       </tr> 
+       <tr><td><input type="submit" id="submit" ng-disabled="calc.use.$invalid|| calc.password.$invalid || calc.name.$invalid || calc.zipcode.$invalid || calc.emails.$error.email || calc.emails.$invalid ||(!(calc.male.$valid || calc.female.$valid)) || !(calc.english.$valid || calc.english.$valid)||calc.country.$invalid"></td></tr>     
+       </table>        
+     
+ 
+       </form>
+      
+     </div>

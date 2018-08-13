@@ -1,0 +1,67 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 chart">
+		<span class="charttype">Select Chart Type:</span>
+			<select ng-model="chartType">
+				<option value="pie">pie</option>
+				<option value="bar">bar</option>
+				<option value="line">line</option>
+				<option value="point">point</option>
+				<option value="area">area</option>
+			</select>
+
+			<span ng-show="chartType==='pie'">
+				<label for="innerRadius">Radius:</label>
+				<input ng-model="config1.innerRadius" type="number" id="innerRadius" />
+			</span>
+		</div>
+	</div>
+
+	<div class="row">
+		
+		<div class="col-xs-12">
+			<div id="chart1" ac-chart="chartType" ac-data="data1" ac-config="config1"></div>
+
+		</div>
+		<div class="col-xs-12">
+			
+		<div id="chart2" ac-chart="chartType" ac-data="data2" ac-config="config2"></div>
+
+		</div>
+		
+	</div>
+
+
+	
+
+
+</div>
+
+
+	
+
+	
+	
+
+    <!-- styling which overrides defaults must be loaded after "angular-charts.js" -->
+    <style>
+        .ac-tooltip {
+            color: black;
+            border: 2px solid rgba(200,200,0,0.8);
+            background-color: rgba(200,200,0,0.5);
+        }
+
+        #chart1 .ac-legend-box {
+            border-radius: 10px;
+        }
+[ac-chart] {
+			
+			width: 48%;
+			height: 400px;
+			margin: 5% auto;
+		}
+    </style>
+
+
+	

@@ -1,0 +1,70 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*layout styles */
+.outter-Wrapper{ background-color:#F0F0F0; float: left; clear: both;width:100%}
+.commonContentAlign { width: 1200px; margin: 0 auto;  }
+
+
+
+
+/*header menu */
+.left-alignbox {float:left;}
+.left-alignbox img{background-color:#F05A49;width:370px;height: 130px;margin:8px 18px 8px 0px; }
+.right-alignbox{float: right;}
+.menu-box{height: 130px;width:140px;float:left;margin:8px 0px 8px 17px;}
+.menu-box img{height: 130px;width:140px;}
+
+/*student info body*/
+
+.student-wrapper { background-color:white; }
+.student-img  {width:800px;height:418px;float:left;background-color:#F0F0F0;}
+
+.student-content {float:left;height:418px;width:374px;margin:0;}
+.student-article-head{color:#F05A49;margin-left:30px;font-size:30px; }
+.student-article-minhead{color:#1E8BC3;margin-left:30px;font-size:20px;}
+.student-body{color:#408080;font-size:15px;margin-left: 30px; }
+.student-link {display:block;padding:18px 30px 18px; background-color:#1E8BC3;width:80px;margin-left:30px;text-decoration:none;color:white;}
+
+.student-link:hover{background-color:white;color:#1E8BC3;border:1px solid #1E8BC3;}
+
+/* setting tools*/
+.setting-content-wrapper{}
+.setting-content{float:left;margin:20px 2% 20px 0px; width: 32%;}
+.leaf{background-color:#35bc7a;}
+.setting{background-color:#f86924;}
+.chat{background-color:#ff9f00; margin-right: 0;}
+
+.setting-contentimg {margin-left:20px;margin-top:20px;height:81px;width:85px;}
+.setting-contenth2 {margin-left:20px;margin-top:20px;color: white;}
+.setting-contentp{margin-left:20px;margin-top:20px;margin-right:45px;color:white;font-size:13px;}
+
+.setting-contentbutton{height:49px;width:51px;margin-left:300px;margin-bottom:20px;position:relative; }
+
+/*footer */
+
+footer{}
+.upper-footer{background-color:#3C474D;}
+  .upper-footer  .footerContentBox{width:25%; float:left;}
+  .upper-footer section h2{margin-top:60px;color:white;}
+   .website  { margin:20px 30px 0px 0px;color:white;font-size:14px;}
+    .website   a{color:white;text-decoration:none;}
+.website   a:hover{text-decoration:underline;}
+.glossory a img {margin-right:4px; }
+
+.news img{margin-top:-7px;margin-left:5px;color:white;}
+.newsimg{margin-top:-7px;margin-left:5px;color:white;float: left;}
+.newscontent{margin-top:-3px;margin-left:10px;color:white; font-size:14px;}
+.news {margin-top:0px;margin-left:5px;color:white;}
+.contactcontent{color:white;font-size:13px;margin-top:-8px;margin-right:10px;}

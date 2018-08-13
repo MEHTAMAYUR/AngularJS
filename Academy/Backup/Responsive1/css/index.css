@@ -1,0 +1,83 @@
+header{background-color:#004986;}
+
+.head-clr{color:#b81d8c;}
+.call-box{background-color:#F68621;color:white;}
+
+/*media query*/
+
+
+
+
+/* middel--part containing banner */
+.middel-part{background-image:url("../img/arizona_pdp_banner.jpg");background-repeat:no-repeat;}
+.middel-part-header{text-transform:uppercase;font-size:70px;color:#004986;padding:20px;font:bold;}
+.middel-part-button{display:inline-block;background-color:#F68621;padding:10px 20px;
+	color:white;font-size:20px;text-transform:uppercase;margin-left:20px;}
+a:hover.middel-part-button {color:white;text-decoration:none;}
+/*ratting */
+.middel-part-rating{color:white;margin-top:20px;padding:40px;font-size:25px;
+	font: 1.429em ;margin-left:-15px;margin-bottom:5px;}
+.middel-part-img{margin-left:14px;margin-bottom:40px;margin-top:-30px;}
+
+/*right side upper part */
+.middel-side-up{background-color:#F68621;color:white;margin:0px;}
+.middel-side-up li{list-style-type:none;font-size:20px;padding:5px;border-bottom:1px solid #dc842c;}
+li.noneborder{border-bottom:none;}
+
+
+/*right side lower part */
+.middel-side-down{background-color:#e35205;color:white;}
+
+.middel-side-form{padding:10px 20px;}
+.text-box{padding:5px;width:100%;margin-top:10px;color:black;}
+
+
+.top-space{margin-top:10px;}
+.left-space{margin-left:10px;}
+
+.submit-button{display:block;background-color:#F68621;padding:10px;color:white;font-size:20px;text-transform:uppercase;margin:20px;text-align: center;}
+a:hover.submit-button {color:white;text-decoration:none;}
+
+
+/*bottom part */
+
+.bottom-header{text-transform:uppercase;text-align:center;margin:10px;color:black;padding-top:30px;}
+
+.bottom-img-part{text-align:center;margin-top:40px;}
+.bottom-paragraph{margin:0px 20px;font-size:18px;}
+.bottom-up{margin:30px;}
+.bottom-upper{margin-top:-25px; }
+.green{color: #39b54a;}
+.violet{color: #004986;}
+.pink{color:#ec008c;}
+.right-border{border-right: 1px solid #e1e1e1;}
+
+
+/*footer part */
+footer{background-color:#4c4c4c;}
+.footer-space{margin-top:100px;}
+.bootom-border{color:#4c4c4c;border-bottom:1px solid white; }
+.footer-img-part{text-align:center;margin-top:10px;}
+.footer-content{color:white;font-size:12px;}	
+.right-align{float:right;}
+
+@media (max-width: 768px){
+		
+	.middel-part-header{font-size:70px;padding:0px;}
+	.middel-part-button{margin-left:0px;margin-bottom:10px;}
+	.middel-part-rating{color:white;margin-top:0px;padding:20px;font-size:14px;margin-bottom:5px;}
+	.middel-part-img{margin-left:0px;margin-bottom:40px;margin-top:0px;}
+	
+	.submit-button{padding:10px;margin:0px;margin-top:20px;}
+	.middel-side-form{padding:0px;}
+	.middel-side-up li{text-align:center;}
+
+}
+
+@media(max-width:321px){
+	.middel-part{background-image:url("../img/arizona_pdp_banner_small.png");background-repeat:no-repeat;background-size:auto 27%;}	
+	.middel-part-header{font-size:40px;padding:0px;}
+	.white-box{background-color:#004986;margin-top:-9px;}
+	.middel-side-up li{text-align:left;}
+	.middel-side-up ul{padding:0px;}
+}

@@ -1,0 +1,3 @@
+--In web development, a polyfill (or polyfiller) is additional code which provides facilities that are not built into a web browser.
+--html5shiv.min.js polyfill help browser to understand html5
+--/respond.min.js polyfill help browser to understand css3

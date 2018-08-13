@@ -1,0 +1,20 @@
+body{ }
+header, h1, h2, h3, h4, h5{ text-transform: uppercase; }
+h1, h2, h3, h4, h5, ul{ margin: 0; padding: 0; }
+header h1 { color: #000; font-size: 24px; font-weight: bold; }
+nav ul { font-size: 11px; }
+nav li { list-style: none; display: inline-block; padding: 0 10px; }
+nav a, nav a:link{ font-size: inherit; color: #000; text-decoration: none; }
+nav li.active {background-color: #ff0000;}
+nav li.active a, nav li.active a:link{ color: #fff; }
+
+/*banner styles*/
+.bannerWrapper img{ width: 100%; }
+
+/*footer styles*/
+footer { background: url("../images/bg_footer.jpg") left bottom; }
+.footerRow1 {}
+	.footerArticle { background-color: #fff; padding-top: 15px; padding-bottom: 15px; }
+	.footerArticle img { float: left; }
+.footerRow2 {}
+	.footerRow2 .block1{}

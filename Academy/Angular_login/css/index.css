@@ -1,0 +1,153 @@
+header{background-image:url("../img/kkr9.jpg");background-repeat:repeat-x;padding:5px;background-color:#3E1A62;}
+ul{margin-top:50px;text-align: center;}
+ul li{display:inline-block;padding:0px;font-size:25px;color:white;margin:10px auto;}
+li a{color:white;padding:12px;}
+li a:hover{background-color:white;text-decoration:none;color:#3a5788;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+
+
+
+.rightheader{color:white;font-size:20px;padding-top:65px;display:inline-block;margin-right:10px;}
+a.rightheader:hover{color:white;}
+
+body { padding-top:118px;}
+
+.chart{padding:10px;text-align:center;}
+.charttype{font-size:17px;font-weight:bold; color:purple;}
+
+
+.log{background-image:url("../img/kkr8.jpg");background-repeat:no-repeat; width:100%;height:auto;min-height:700px;background-color:#3E1A62;}
+
+
+.mainback{background-image:url("../img/kkr9.jpg");background-repeat:repeat-x; width:100%;}
+
+.pad{padding:10px;}
+/*.input-text{
+
+	height: 34px; padding: 6px 12px;
+  font-size: 14px;
+  
+  color: #555;
+ 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}*/
+
+
+
+.login-font{color:white;font-size:22px;}        
+.login-font-warn{color:red;font-size:22px;background-image:url("../img/kkr9.jpg");background-repeat:repeat-x;}   
+h1{color: white;}
+
+.icon-social-large-twitter {
+    display: block;
+    background: url(../img/wt20-2016-sprite.png) -488px -235px no-repeat;
+    width: 22px;
+    height: 18px;
+}
+
+
+.icon-social-large-facebook {
+    display: block;
+    background: url(../img/wt20-2016-sprite.png) -97px -433px no-repeat;
+    width: 10px;
+    height: 21px;
+}
+
+.icon-social-large-google {
+    display: block;
+    background: url(../img/wt20-2016-sprite.png) -446px -366px no-repeat;
+    width: 21px;
+    height: 22px;
+}
+
+.icon-social-large-youtube {
+    display: block;
+    background: url(../img/wt20-2016-sprite.png) -488px -213px no-repeat;
+    width: 26px;
+    height: 22px;
+}
+
+
+.icon-social-large-instagram {
+    display: block;
+    background: url(../img/wt20-2016-sprite.png) -407px -70px no-repeat;
+    width: 18px;
+    height: 21px;
+}
+
+.center{text-align:center;}
+.top {padding:20px;margin-left:20px;color:white;font-size:15px;}
+.socialMedia ul{margin-top:0px;padding:-10px;}
+.socialMedia ul li{padding:10px;margin-top:-50px;}
+.socialMedia ul li a{color:white;}
+.socialMedia ul li a:hover{color:#3a5788;background-color:transparent;}
+
+
+
+.disabled{
+	visibility:hidden;
+}
+.enable{
+	visibility:visible;
+}
+
+.unactive{
+  background-color:#3E1A62;color:white;
+}
+.active{
+  background-color:white;color:#3E1A62;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+.contacthight{height:400px;}
+
+
+.contactheader{padding-left:250px;}
+.contactdetail{margin-left:-10px;}
+
+.headerfont{color:white;text-align:center;font-family:"verdana";font-size:50px;}
+
+
+
+
+@media (max-width: 869px){
+
+body { padding-top:178px;}	
+.centerimage{text-align:center;}
+.log{background-image:url("../img/kkr1.jpg");background-repeat:no-repeat; width:100%;height:auto;background-color:#3E1A62;}
+.headerfont{font-size:20px;}
+.rightheader{font-size:15px;padding-top:65px;margin-right:10px;}
+
+.login-font{color:white;font-size:15px;}        
+.login-font-warn{color:red;font-size:15px;background-image:url("../img/kkr9.jpg");background-repeat:repeat-x;}   
+h1{color: white;}
+
+
+ul{margin-top:10px;text-align: center;}
+ul li{display:inline-block;padding:0px;font-size:12px;color:white;margin:10px auto;}
+li a{color:white;padding:15px;}
+li a:hover{background-color:white;text-decoration:none;color:#3a5788;-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;}
+
+}
+
+@media(max-width:450px){
+    .contactheader{padding-left:0px;}
+  .contactdetail{margin-left:0px;}
+}
+@media(max-width:375px){
+li a{color:white;padding:4px;}
+ul li{display:inline-block;padding:0px;font-size:10px;color:white;margin:10px auto;}
+	.contactheader{padding-left:0px;}
+	.contactdetail{margin-left:0px;}
+	.log{background-image:url("../img/kkr2.jpg");background-repeat:no-repeat;width:100%;height:auto;background-color:#3E1A62;}
+
+
+	}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Form Vailidation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" href="css/index.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+       
+    <h1>Registration form</h1>
+
+       <form name="calc" method="post" onsubmit="return valid()"  action="">
+
+       <table>
+       <tr>
+       <td class="margin-top-bottom"> <label for="user_id">User id:</label></td>  
+       <td class="margin-top-bottom-right"><input type="text" id="user_id" onkeypress="removererror('user')" onblur="error('user')"><label id="user"></label></td>  
+       </tr>
+       <tr>
+          <td class="margin-top-bottom">   <label for="password">Password:</label></td>  
+           <td class="margin-top-bottom-right"><input type="password" id="password" onkeypress="removererror('passwordl')" onblur="error('passwordl')"><label id="passwordl"></label></td>  
+       </tr>
+        <tr>
+         <td class="margin-top-bottom"> <label for="name">Name:</label></td>  
+         <td class="margin-top-bottom-right"><input type="text" id="name" onkeypress="removererror('namel')" onblur="error('namel')"><label id="namel"></label></td>  
+         
+       </tr>
+       <tr>
+         <td class="margin-top-bottom"> <label for="address">Address:</label></td>  
+         <td class="margin-top-bottom-right"><input type="text" id="address"></td> 
+
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"> <label for="country">Country:</label></td>  
+         <td  class="margin-top-bottom-right" > <select id="country" onclick="removererror('countryl')" onblur="error('countryl')"><option>(Please Select Country)</option><option>India</option><option>USA</option><option>Austrailia</option></select><label id="countryl"></label> </td>  
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"> <label for="zipcode">Zipcode:</label></td>  
+         <td  class="margin-top-bottom-right"><input type="text" id="zipcode" onkeypress="removererror('zipcodel')" onblur="error('zipcodel')"><label id="zipcodel"></label> </td> 
+         
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"> <label for="email">Email:</label></td>  
+         <td  class="margin-top-bottom-right"><input type="text" id="email" onkeypress="removererror('emaill')" onblur="error('emaill')"><label id="emaill"></label> </td>
+          
+       </tr>
+       <tr>
+         <td  class="margin-top-bottom"><label for="Sex">Sex:</label></td>  
+         <td  class="margin-top-bottom-right">
+         <input type="radio" id="male" name="gender" onclick="removererror('genderl')" onblur="error('genderl')">Male
+         <input type="radio" id="female" name="gender" onclick="removererror('genderl')" onblur="error('genderl')">Female<label id="genderl"></label> </td> 
+         
+       </tr> 
+       
+       <tr>
+         <td  class="margin-top-bottom"> <label for="language">Language:</label></td>
+         <td  class="margin-top-bottom-right">
+         <input type="checkbox" id="english" onclick="removererror('checkl')" onblur="error('checkl')"> English
+         <input type="checkbox" id="nonenglish" onclick="removererror('checkl')" onblur="error('checkl')">Non English <label id="checkl"></label></td>
+        
+       </tr> 
+       <tr>
+         <td  class="margin-top-bottom"> <label for="about">About</label></td>
+         <td  class="margin-top-bottom-right"><textarea id="about"></textarea></td>
+       </tr> 
+       <tr><td><input type="submit" id="submit"></td></tr>     
+       </table>        
+     
+ 
+       </form>
+      
+
+
+
+
+        <script src="js/vendor/jquery-1.12.1.min.js"></script>
+     
+        <script src="js/plugins.js"></script>
+        <script src="js/index.js"></script>
+      
+
+        
+    </body>
+</html>

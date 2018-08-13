@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+       
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+       
+       <form name="calc" method="post" onsubmit="return ret()" >
+       
+       <input type="number" name="a">
+       <input type="number" name="b">
+       
+
+       <div>
+         </br>
+         <input type="submit"  value="Add" onclick="add()">          
+        <input type="submit"  value="Multiplication" onclick="mul()">  
+        <input type="submit"  value="Division" onclick="div()">  
+        <input type="submit"  value="Module" onclick="module()">  
+        <input type="submit"  value="Minus" onclick="minus()">   
+       </div>
+       <div>
+        </br>
+           <input type="number" name="result">
+       </div>
+ 
+       </form>
+      
+
+
+
+
+        <script src="js/vendor/jquery-1.12.1.min.js"></script>
+     
+        <script src="js/plugins.js"></script>
+        <script src="js/index.js"></script>
+
+        
+    </body>
+</html>

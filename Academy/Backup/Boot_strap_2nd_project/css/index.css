@@ -1,0 +1,51 @@
+h1,h2,h3,h4,a {text-transform:uppercase;}
+
+/*header css*/
+header{background-image:url("../img/banner.jpg");background-repeat:no-repeat;background-size:cover;text-align:center;padding:105px;color:white;}
+header h1{font-style:bold;font-size:65px;margin-bottom:-8px;}
+header ul{padding:60px;}
+header li{display:inline-block;padding:5px;}
+header li a{color:rgba(255,255,255,.5);font-size:18px;padding:20px;text-decoration:none;margin-top:5px;}
+
+header li a:hover{color:white;text-decoration:none;
+	border:1px solid white;border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;}
+
+header li a:visited{color:white;text-decoration:none;}
+header li a:link{color:white;text-decoration:none;}
+
+
+header li a:active{color:white;text-decoration:none;
+	border:1px solid white;border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;}
+
+.welcome{margin-top:50px;font-size:18px;}
+.welcome h1{margin-bottom:-5px;font-style:bold;font-size:45px;}
+.welcome img{width:100%;margin-top:35px;}
+.welcome p{margin-top:35px;font-size:14px;}
+.welcome h4{margin-top:30px;font-size:25px;text-transform:bold;}
+
+.welcomeside{margin-top:15px;padding:30px;}
+.welcomeside span{font-size: 8pt;color: #A2A2A2;margin-left:-90px;}
+.welcomeside img{float:left;margin-right:20px;margin-left:0px;width:70px;margin-top:45px;}
+.welcomeside p{margin-top:20px;font-size:14px;}
+.border-bottom{border-bottom:1px solid #ECECEC;}
+/* bootom*/
+.bottom{background-color:#f2f2f2;}
+.bottom-part{margin-top:90px;}
+.bottom-part h4{font-size:20px;font-style:bold;}
+.bottom-part img{margin-top:30px;width:100%;}
+.bottom-part p{margin-top:40px;}
+.bottom-part a{display:inline-block;padding:20px 25px;background-color:#e95d3c; border:1px solid white;border-radius: 40px 40px 40px  40px ;
+	-moz-border-radius: 40px  40px  40px  40px ;
+	-webkit-border-radius: 40px  40px  40px  40px ; color:white;text-decoration:none;margin-top:20px;font-size:16px;margin-bottom:80px;}
+.bottom-part a:hover{text-decoration:none;background-color:#de3d27;color: white;} 
+
+/*footer*/
+footer{background-color:#1d1d1d;}
+footer h4{font-size:20px;font-style:bold;color:white;margin-top:80px;}
+.linker-footer{margin-top:30px;list-style-type:none;margin-left:-40px;}
+.linker-footer a{color: rgba(255,255,255,.5);display:block;padding:10px 0px;border-bottom:1px solid  rgba(255,255,255,.5);font-size:14px;text-transform:none;}
+.bor a{border-bottom:none;}

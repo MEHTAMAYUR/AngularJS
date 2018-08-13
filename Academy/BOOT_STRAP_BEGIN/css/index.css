@@ -1,0 +1,47 @@
+header{}
+h1, h2, h3,h4, a{text-transform:uppercase;}
+
+nav li{display:inline-block;padding:35px 4px 35px 0px;float:left}
+nav li a{padding:15px;color:black;text-decoration:none;}
+nav li a:hover{color:white;background-color:#e95d3c;text-decoration:none;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;}
+.front-img img{width:100%;}
+.heading-details{margin-left:0px;margin-top:60px;font-size:20px;}
+.details-article{margin-left:0px;margin-top:30px;font-size:13px; }
+.marketing-button{padding:12px 25px;background-color:#e95d3c;
+  display:inline-block;text-decoration:none;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;color:white;}
+ a:hover.marketing-button {text-decoration:none;background-color:#de3d27;color: white;} 
+ .marketing-img{margin-top:15px; margin-bottom:25px;}
+
+  .marketing-link{text-transform:none;color:#ff0000;text-decoration:underline;}
+  a:hover.marketing-link{color:#ff0000;}
+  .marketing-link-box{margin-top:10px;text-transform:none;padding-bottom:15px;}
+ .market-paragraph{margin-top:25px;}
+ .market-img{margin-top:25px; margin-bottom:35px;float:left;}
+ .description{margin-top:150px;}
+ .bottom-border{border-bottom: 1px solid rgba(0,0,0,.1);}
+ .description-paragraph{margin-top:20px;}
+ .heading-article{font-size:20px;margin-top:25px; }
+
+ .footer-border{border-bottom: 1px solid #303030;}
+ footer { background-image:url("../img/bg_footer.jpg");}
+  .footer-box{background-color:white;margin:35px 0px;}
+ .footer-img{float:left; padding:15px;margin:15px 0px; }
+ .footer-header{padding:25px;}
+.footer-paragraph{margin-top:-28px;font-size:14px;margin-right:10px; }
+.margin-class{margin:15px 0px;}
+ .footer-heading-article{font-size:20px;margin-top:55px;color:white; }
+ .article-footer{margin-top:50px; padding:35px;background-color:white;
+  border-radius: 5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;border: 0px solid #000000;}
+ .article-content{font-size:18px;}
+ .article-content-end{font-size:18px;font-style:bold;margin-top:25px;margin-bottom:0px;}
+
+ .conatiner-dis{margin-top:35px;}
+ .color-class{color:rgba(255,255,255,.4);}
+ .row-header{font-size:13px;}
+ .row-link-footer{text-decoration:none;text-transform:none;}
+ a.row-link-footer{color:rgba(255,255,255,.4);}
+ .partition-row {padding:0px 0px 20px;border-bottom: 1px solid #303030;}
+ .img-link{float:left;list-style:none;padding:3px;}
+ .ending-footer{padding:40px 0px;color:rgba(255,255,255,.4);text-align:center; }
+
+

@@ -1,0 +1,67 @@
+
+
+<div class="log">
+    <div class="container">
+ <div class="row">
+ <div class="col-xs-12">
+   
+
+    <h1>Login Form</h1>
+
+ <form name="calc" method="post" ng-submit="valid()"  >
+      <table>
+      
+
+       
+       <tr>
+
+             <td class="pad login-font"> <label for="use">User id:</label></td>  
+             <td class="pad login-font"> 
+             <input class="form-control" type="text" name="user" ng-model="user" ng-minlength=5 ng-maxlength=12 required>
+              </td> 
+       </tr>
+
+        <tr>
+              <td>
+              </td>
+              <td>
+                 <user-errorr ng-class="{'disabled':!(calc.user.$invalid && calc.user.$touched),'enable':(calc.user.$invalid && calc.user.$touched)}" class="login-font-warn"></user-errorr>
+            
+
+             </td> 
+
+       </tr>
+
+
+        <tr>
+          <td  class="pad login-font">   <label for="password">Password:</label></td>  
+           <td class="pad login-font">
+           <input  class="form-control" type="password" ng-model="password" name="password"  ng-minlength=7 ng-maxlength=12 required>
+             </td> 
+       </tr>
+
+        <tr>
+              <td>
+              </td>
+              <td>
+           <label ng-class="{'disabled':!(calc.password.$invalid && calc.password.$touched),'enable':(calc.password.$invalid && calc.password.$touched)}" class="login-font-warn">Required and must be length between 7 to 12</label>
+           </td>  
+       </tr>
+        
+       <tr>
+       <td class="pad"><a href="#/register"><input type="button" value="Sign Up" class="btn btn-default"></a></td>
+       <td class="pad"><input  class="btn btn-default" type="submit" id="submit" ng-disabled="calc.use.$invalid|| calc.password.$invalid" value="Login"></td></tr>    
+
+       </table>        
+  </form> 
+ </div>
+
+ </div>
+ 
+     
+ </div>
+     
+     </div>
+
+
+ 

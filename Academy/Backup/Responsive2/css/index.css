@@ -1,0 +1,90 @@
+header{background-image:url("../img/wt20-body-bg-new.jpg");}
+.logo{background:url("../img/wt20-2016-sprite.png") -226px 0 no-repeat;   
+
+ 	 width: 181px;
+    height: 70px;
+   
+    display: block;
+   }
+
+
+a{text-transform:uppercase;}
+.call-box{background-color:#601b6a;color:white;}
+
+/*media query*/
+
+
+
+
+/* middel--part containing banner */
+.middel-part{background-color:#f0f0f0;}
+
+
+
+
+
+/*right side upper part */
+
+li.noneborder{border-bottom:none;}
+
+
+/*right side lower part */
+.middel-side-down{background-color:#601b6a;color:white;}
+
+.middel-side-form{padding:10px 20px;}
+.text-box{padding:5px;width:100%;margin-top:10px;color:black;}
+
+
+.top-space{margin-top:10px;}
+.left-space{margin-left:10px;}
+
+.submit-button{display:block;background-color:#F68621;padding:10px;color:white;font-size:20px;text-transform:uppercase;margin:20px;text-align: center;}
+a:hover.submit-button {color:white;text-decoration:none;}
+
+
+/*bottom part */
+
+.bottom-header{text-transform:uppercase;text-align:center;margin:10px;color:black;padding-top:30px;}
+
+.bottom-img-part{text-align:center;margin-top:40px;}
+.bottom-paragraph{margin:10px 20px;font-size:18px;}
+
+
+.right-border{border-right: 1px solid #e1e1e1;}
+
+
+/*footer part */
+footer{background-color:#601b6a;}
+.footer-space{margin-top:100px;}
+.bootom-border{color:#601b6a;border-bottom:1px solid white; }
+.footer-img-part{text-align:center;margin-top:10px;}
+.footer-content{color:white;font-size:12px;}	
+.right-align{float:right;}
+
+
+.menubar{margin-bottom:0px;background-color:orange;}
+.menu-ul{background-color:#5a277b;margin-bottom:0px;}
+.menu{display:inline-block;padding:15px;}
+.menu a:hover{text-decoration:none;color:white;}
+.main-img{width:100%;}
+.box{padding:10px;}
+.main-heads{color:#57b8d9;z-index:1;position:absolute;margin-left:50px;margin-top:460px;}
+.main-headst{margin-top:470px;margin-left:50px;z-index:1;position:absolute;color:white;font-size:25px;}
+.headst{color:#57b8d9}
+
+
+@media (max-width: 768px){
+		
+	
+.submit-button{padding:10px;margin:0px;margin-top:20px;}
+	.middel-side-form{padding:0px;}
+
+	.right-border{border-right:none;}
+	.menubar{display:none;}
+.main-heads{color:#57b8d9;z-index:1;position:absolute;margin-left:50px;margin-top:250px;}
+.main-headst{margin-top:270px;margin-left:50px;z-index:1;position:absolute;color:white;font-size:22px;}
+}
+
+@media(max-width:321px){
+	
+	}

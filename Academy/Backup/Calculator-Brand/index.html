@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+       <link rel="stylesheet" href="css/index.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+       
+       <form name="calc" method="post" onsubmit="return ret()" >
+       
+           <input type="text" name="result">
+       
+
+       <div class="margin-top-bottom">
+
+        <input type="submit"  value="1" onclick="number(1)" class="num">          
+        <input type="submit"  value="2" onclick="number(2)" class="num">  
+        <input type="submit"  value="3" onclick="number(3)" class="num">  
+        <input type="submit"  value="+" onclick="add()" class="num">   
+        </div>
+
+       <div class="margin-top-bottom">
+
+        <input type="submit"  value="4" onclick="number(4)" class="num">  
+        <input type="submit"  value="5" onclick="number(5)" class="num">
+        <input type="submit"  value="6" onclick="number(6)" class="num">
+         <input type="submit"  value="-" onclick="minus()" class="num">   
+       </div>
+
+
+      <div class="margin-top-bottom"> 
+
+        <input type="submit"  value="7" onclick="number(7)" class="num">
+        <input type="submit"  value="8" onclick="number(8)" class="num">
+        <input type="submit"  value="9" onclick="number(9)" class="num">
+        <input type="submit"  value="*" onclick="mul()" class="num">  
+      </div>
+
+                 
+          
+          <input type="submit"  value="/" onclick="div()" class="num">  
+        
+        <input type="submit"  value="=" onclick="show()" class="num">     
+       
+        <input type="submit"  value="reset" onclick="reseter()" class="num">     
+       
+        
+       
+         
+       
+       
+       
+      
+
+
+      
+
+     
+          
+     
+ 
+       </form>
+      
+
+
+
+
+        <script src="js/vendor/jquery-1.12.1.min.js"></script>
+     
+        <script src="js/plugins.js"></script>
+        <script src="js/index.js"></script>
+
+        
+    </body>
+</html>
